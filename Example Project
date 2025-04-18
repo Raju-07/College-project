@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Example: Simple Survey Form</title> <!-- Added a specific title -->
+</head>
+<body style="color:white; background-color:rgb(13, 93, 119); font-family: sans-serif;">
+
+    <!-- Final Project Example -->
+    <h2 style="text-align: center; font-family: 'Times New Roman';"><span style="background-color: #FFD700; color: black; padding: 5px 10px;">Project Example: Simple Survey Form</span></h2>
+    <h4 style="font-family: Aptos, sans-serif; text-align: center;">This small project combines several elements we've learned about.</h4>
+
+    <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; margin: 20px;">
+        
+        <h3 style="font-family: Aptos, sans-serif; text-align: center;">Tell Us About Yourself!</h3>
+        
+        <p style="font-family: Aptos, sans-serif;">Please fill out this short form:</p>
+
+        <form action="#" method="post"> <!-- action="#" means submit to the same page (for example purposes) -->
+            
+            <!-- Text Input -->
+            <p>
+                <label for="proj_name" style="font-family: Aptos, sans-serif; display: block; margin-bottom: 5px;">Name:</label>
+                <input type="text" id="proj_name" name="name" placeholder="Your full name" required style="padding: 8px; width: 95%;">
+            </p>
+
+            <!-- Password Input -->
+            <p>
+                <label for="proj_pass" style="font-family: Aptos, sans-serif; display: block; margin-bottom: 5px;">Create a Password:</label>
+                <input type="password" id="proj_pass" name="password" required style="padding: 8px; width: 95%;">
+            </p>
+
+            <!-- Radio Buttons -->
+            <p style="font-family: Aptos, sans-serif;">Your favorite primary color?</p>
+            <input type="radio" id="color_red" name="fav_color" value="red">
+            <label for="color_red" style="font-family: Aptos, sans-serif;">Red</label><br>
+            <input type="radio" id="color_blue" name="fav_color" value="blue">
+            <label for="color_blue" style="font-family: Aptos, sans-serif;">Blue</label><br>
+            <input type="radio" id="color_yellow" name="fav_color" value="yellow">
+            <label for="color_yellow" style="font-family: Aptos, sans-serif;">Yellow</label><br>
+
+            <!-- Checkboxes -->
+            <p style="font-family: Aptos, sans-serif;">Which technologies have you used? (Select all that apply)</p>
+            <input type="checkbox" id="tech_html" name="tech" value="html">
+            <label for="tech_html" style="font-family: Aptos, sans-serif;">HTML</label><br>
+            <input type="checkbox" id="tech_css" name="tech" value="css">
+            <label for="tech_css" style="font-family: Aptos, sans-serif;">CSS</label><br>
+            <input type="checkbox" id="tech_js" name="tech" value="javascript">
+            <label for="tech_js" style="font-family: Aptos, sans-serif;">JavaScript</label><br>
+
+            <!-- Image -->
+            <p style="font-family: Aptos, sans-serif;">Here's a placeholder image:</p>
+            <p><img src="https://th.bing.com/th/id/OIP.QQUTcBAmVvxoiZ0CRJy5rwHaHa?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="Placeholder image related to HTML example" style="border: 2px solid white;"></p>
+
+            <!-- Ordered List -->
+            <p style="font-family: Aptos, sans-serif;">Steps to complete:</p>
+            <ol style="font-family: Aptos, sans-serif;">
+                <li>Fill in your name and password.</li>
+                <li>Choose your favorite color.</li>
+                <li>Select technologies used.</li>
+                <li>Click Submit!</li>
+            </ol>
+            
+            <!-- Table -->
+            <p style="font-family: Aptos, sans-serif;">Quick Summary Table:</p>
+            <table border="1" style="border-collapse: collapse; color: white; width: 80%; margin: 10px auto;">
+                <tr>
+                    <th>Element Type</th>
+                    <th>Used For</th>
+                </tr>
+                <tr>
+                    <td>Input Fields</td>
+                    <td>Name, Password</td>
+                </tr>
+                <tr>
+                    <td>Radio Buttons</td>
+                    <td>Color Choice</td>
+                </tr>
+                 <tr>
+                    <td>Checkboxes</td>
+                    <td>Technology Selection</td>
+                </tr>
+            </table>
+            <br>
+
+            <!-- Button -->
+            <p style="text-align: center;">
+                <button type="submit" style="padding: 10px 20px; font-size: 16px; background-color: tomato; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit Survey</button>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>
